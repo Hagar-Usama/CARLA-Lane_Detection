@@ -404,8 +404,8 @@ class HUD(object):
     def __init__(self, width, height):
         self.dim = (width, height)
         font = pygame.font.Font(pygame.font.get_default_font(), 20)
-        fonts = [x for x in pygame.font.get_fonts() if 'mono' in x]
-        default_font = 'ubuntumono'
+        fonts = [x for x in pygame.font.get_fonts() if 'arial' in x]
+        default_font = 'arial'
         mono = default_font if default_font in fonts else fonts[0]
         mono = pygame.font.match_font(mono)
         self._font_mono = pygame.font.Font(mono, 14)
@@ -786,6 +786,9 @@ class CameraManager(object):
 
             #################################################
             # it's my code
+            ##################################################
+            # it's his code let's change
+            #################################################
             pt1_sum_ri = (0, 0)
             pt2_sum_ri = (0, 0)
             pt1_avg_ri = (0, 0)
@@ -1111,7 +1114,7 @@ def game_loop(args):
 
     try:
         client = carla.Client(args.host, args.port)
-        client.set_timeout(2.0)
+        client.set_timeout(999)
 
         display = pygame.display.set_mode(
             (args.width, args.height),
