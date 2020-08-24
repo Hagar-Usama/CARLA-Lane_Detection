@@ -7,7 +7,7 @@
 ---
 
 ## Todo
-* [ ] implement advanced lane detection algorithm
+* [x] implement advanced lane detection algorithm
 
 --- 
 
@@ -15,3 +15,8 @@
 * I am working on Carla 0.9.9.4
 * I fixed font[0] temporarly 
 * fixed failed to load town by increasing timeout
+
+
+## Instructions
+* move files inside carla_examples into your carla edition `/PythonAPI/examples`
+* run `python multi_feature.py`
